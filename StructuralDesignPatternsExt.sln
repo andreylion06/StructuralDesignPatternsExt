@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComposerPattern", "ComposerPattern\ComposerPattern.csproj", "{D782387A-DD96-48D5-AE27-9CCBEBE81CFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComposerPattern2", "ComposerPattern2\ComposerPattern2.csproj", "{3AF5DA14-C44F-4ACF-9141-65E3D79424BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComposerPattern2", "ComposerPattern2\ComposerPattern2.csproj", "{3AF5DA14-C44F-4ACF-9141-65E3D79424BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxiPattern", "ProxiPattern\ProxiPattern.csproj", "{890D14C4-5BC3-40EE-AC74-079ABBD24D41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3AF5DA14-C44F-4ACF-9141-65E3D79424BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AF5DA14-C44F-4ACF-9141-65E3D79424BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AF5DA14-C44F-4ACF-9141-65E3D79424BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{890D14C4-5BC3-40EE-AC74-079ABBD24D41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{890D14C4-5BC3-40EE-AC74-079ABBD24D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{890D14C4-5BC3-40EE-AC74-079ABBD24D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{890D14C4-5BC3-40EE-AC74-079ABBD24D41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
