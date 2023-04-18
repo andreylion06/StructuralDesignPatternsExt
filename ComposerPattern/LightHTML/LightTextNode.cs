@@ -10,14 +10,14 @@ namespace ComposerPattern.LightHTML
 {
     public class LightTextNode : LightNode
     {
-        public LightTextNode(string text, List<string> cssClasses) : 
-            base("span", text, DisplayType.Row, ClosureType.Closing, cssClasses)
+        public LightTextNode(string tagName, string text, List<string> cssClasses) : 
+            base(tagName, text, DisplayType.Row, ClosureType.Closing, cssClasses)
         {
         }
 
         public override LightNode Clone()
         {
-            return new LightTextNode(Text, (CssClasses.Clone() as List<string>)!);
+            return new LightTextNode(TagName,Text, (CssClasses.Clone() as List<string>)!);
         }
     }
 }

@@ -53,7 +53,7 @@ namespace ComposerPattern.LightHTML
 
             string output = $"{tabs}<{TagName}";
             
-            if(CssClasses.Count > 0) 
+            if(CssClasses != null && CssClasses.Count > 0) 
                 output += $" class = \"{CssClassesToString()}\"";
 
             output += ">";
@@ -91,6 +91,19 @@ namespace ComposerPattern.LightHTML
             }
 
             return String.Empty;
+        }
+
+        public override string ToString()
+        {
+            string output = String.Empty;
+
+            if (Text != null)
+                output += $"{Text}\n";
+
+            foreach (LightNode node in _children)
+                output += $"{node}\n";
+
+            return output;
         }
 
         public override LightNode Clone()

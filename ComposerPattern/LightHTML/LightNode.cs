@@ -9,7 +9,7 @@ namespace ComposerPattern.LightHTML
 {
     public abstract class LightNode
     {
-        public string TagName { get; private set; }
+        public string TagName { get; set; }
         public string Text { get; set; }
         public DisplayType DisplayType { get; private set; }
         public ClosureType ClosureType { get; private set; }
@@ -36,7 +36,7 @@ namespace ComposerPattern.LightHTML
 
             string output = $"{tabs}<{TagName}";
             
-            if(CssClasses.Count > 0)
+            if(CssClasses != null && CssClasses.Count > 0)
                 output += $" class = \"{CssClassesToString()}\"";
             
             if (ClosureType == ClosureType.Unitary && Text != null)
@@ -48,6 +48,11 @@ namespace ComposerPattern.LightHTML
         }
 
         public virtual string InnerHTML()
+        {
+            return Text;
+        }
+
+        public override string ToString()
         {
             return Text;
         }
